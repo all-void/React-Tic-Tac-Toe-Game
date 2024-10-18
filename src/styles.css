@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;               /* Use flexbox layout */
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  min-height: 100vh;          /* Take full viewport height */
+  background-color: #f5f5f5;  /* Optional background color */
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.square {
+  background: #ffffff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  font-size: 30px;              /* Reduced font size for balance */
+  color: #ff4d4d;               /* Softer red for better aesthetics */
+  margin-bottom: 20px;          /* Increased bottom margin for spacing */
+  font-weight: bold;            /* Bold to make the text stand out */
+  text-align: center;           /* Center align for better focus */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: color 0.3s ease;  /* Smooth transition effect */
+}
+
+/* Optional Hover Effect (if you want interaction) */
+.status:hover {
+  color: #e60000;               /* Darker red on hover for subtle effect */
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 50px;
+}
+
+.movesButton {
+  font-size: 16px;           /* Reduced font size */
+  color: white;              /* Text color remains white */
+  background-color: #f0a500; /* Golden background */
+  border: none;              /* No border */
+  padding: 8px 16px;         /* Slightly reduced padding */
+  border-radius: 6px;        /* Rounded corners still there */
+  cursor: pointer;           /* Pointer on hover */
+  margin-right: 10px;        /* Add spacing between buttons */
+  margin-bottom: 10px;       /* Vertical spacing between rows of buttons */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover Effect */
+.movesButton:hover {
+  background-color: #d48900; /* Darker golden on hover */
+  transform: scale(1.05);    /* Slight scale-up */
+}
+
+/* Active/Clicked Effect */
+.movesButton:active {
+  background-color: #b37400; /* Darker on click */
+  transform: scale(0.98);    /* Scale down slightly when clicked */
+}
+
